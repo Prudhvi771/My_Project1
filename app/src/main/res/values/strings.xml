@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="facebook_app_id">1080096872392392</string>
+    <string name="fb_login_protocol_scheme">fb1080096872392392</string>
+    <string name="txt_size">txt size</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">nqnTmQjQuiVxtmB4oQMCUyIOF</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">1JE3i8nLLe4SU5Nas6kKAysjNPuLTJSMCdqKiNAgi5nWPPrERn</string>
+    <string name="welcome_to_homepage">Welcome to HomePage</string>
+</resources>
