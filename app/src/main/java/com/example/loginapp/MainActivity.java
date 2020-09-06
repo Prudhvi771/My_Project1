@@ -91,7 +91,7 @@ public class MainActivity<accessTokenTracker> extends AppCompatActivity {
             @Override
             public void failure(TwitterException exception) {
                 // Do something on failure
-                Toast.makeText(getApplicationContext(),"Login fail",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Login failed",Toast.LENGTH_LONG).show();
             }
         });
     }
