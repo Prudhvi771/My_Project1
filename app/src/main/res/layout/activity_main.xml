@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#000000"
+    android:background="@drawable/bg"
     android:orientation="vertical"
     android:layout_gravity="top">
 
@@ -15,7 +16,8 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="25sp"
-        android:layout_marginTop="20dp"
+        android:text="Social Media Integration"
+        android:layout_marginTop="15dp"
         android:textColor="@color/com_facebook_blue"
         android:gravity="center"
         />
@@ -34,8 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:textSize="17sp"
+        android:textColor="#0000cd"
+        android:textSize="20sp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         />
@@ -45,8 +47,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#FF1493"
-        android:textSize="15sp"
+        android:textColor="#0000cd"
+        android:textSize="20sp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         />
@@ -55,7 +57,7 @@
         android:layout_width="250dp"
         android:layout_height="30dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp" />
 
     <com.twitter.sdk.android.core.identity.TwitterLoginButton

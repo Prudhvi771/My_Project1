@@ -6,4 +6,5 @@
     <string name="com.twitter.sdk.android.CONSUMER_KEY">nqnTmQjQuiVxtmB4oQMCUyIOF</string>
     <string name="com.twitter.sdk.android.CONSUMER_SECRET">1JE3i8nLLe4SU5Nas6kKAysjNPuLTJSMCdqKiNAgi5nWPPrERn</string>
     <string name="welcome_to_homepage">Welcome to HomePage</string>
+    <string name="Color">#ffffff</string>
 </resources>

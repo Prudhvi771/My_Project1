@@ -3,9 +3,13 @@ package com.example.loginapp;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -115,19 +119,24 @@ public class MainActivity<accessTokenTracker> extends AppCompatActivity {
         startActivityForResult(intent,10);
     }
     AccessTokenTracker tokenTracker= new AccessTokenTracker() {
+        @SuppressLint("ResourceAsColor")
         @Override
         protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken)
         {
             if(currentAccessToken==null){
                 txtName.setText("");
                 txtMail.setText("");
-                myProfile.setText("");
+                myProfile.setText("Social Media Integration");
                 circleImageView.setImageResource(0);
+                txtName.setBackgroundColor(Color.TRANSPARENT);
+                txtMail.setBackgroundColor(Color.TRANSPARENT);
                 loginButton1.setVisibility(View.VISIBLE);
                 Toast.makeText(MainActivity.this,"User Logged Out",Toast.LENGTH_LONG).show();
             }
             else{
                 loginButton1.setVisibility(View.INVISIBLE);
+               txtName.setBackgroundColor(Color.WHITE);
+               txtMail.setBackgroundColor(Color.WHITE);
                 loudUserProfile(currentAccessToken);
             }
 
@@ -141,10 +150,10 @@ public class MainActivity<accessTokenTracker> extends AppCompatActivity {
                 try {
                     myProfile.setText("MY PROFILE");
                     if (object.has("name")) {
-                        txtName.setText(object.getString("name"));
+                        txtName.setText("NAME: "+object.getString("name"));
                     }
                     if (object.has("email")) {
-                        txtMail.setText("e-mail: " + object.getString("email"));
+                        txtMail.setText("EMAIL: " + object.getString("email"));
                     }
                     if (object.has("id")) {
                         String image_url="https://graph.facebook.com/"+object.getString("id")+"/picture?type=normal";
