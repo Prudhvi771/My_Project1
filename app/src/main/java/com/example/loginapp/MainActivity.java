@@ -128,15 +128,15 @@ public class MainActivity<accessTokenTracker> extends AppCompatActivity {
                 txtMail.setText("");
                 myProfile.setText("Social Media Integration");
                 circleImageView.setImageResource(0);
-                txtName.setBackgroundColor(Color.TRANSPARENT);
-                txtMail.setBackgroundColor(Color.TRANSPARENT);
+                //txtName.setBackgroundColor(Color.TRANSPARENT);
+                //txtMail.setBackgroundColor(Color.TRANSPARENT);
                 loginButton1.setVisibility(View.VISIBLE);
                 Toast.makeText(MainActivity.this,"User Logged Out",Toast.LENGTH_LONG).show();
             }
             else{
                 loginButton1.setVisibility(View.INVISIBLE);
-               txtName.setBackgroundColor(Color.WHITE);
-               txtMail.setBackgroundColor(Color.WHITE);
+              // txtName.setBackgroundColor(Color.WHITE);
+              // txtMail.setBackgroundColor(Color.WHITE);
                 loudUserProfile(currentAccessToken);
             }
 
